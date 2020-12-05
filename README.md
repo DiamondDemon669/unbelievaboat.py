@@ -51,3 +51,24 @@ This URL doesnt exist, are you sure you entered in the right data?
 You are sending too many requests, too quickly
 ### serverError
 Unbelievaboat server error. try again later
+## Extensions
+The extension includes functions not present in the base API
+
+To use it, use this code instead
+```python
+from unbelievaboat-ext import client
+unbclient = client('API_TOKEN')
+```
+All functions from the main module work and you have to download the main module as well as unbelievaboat-ext.py
+### reset_economy(*string: guild_id*)
+Sets all users balance to zero (bank and cash)
+
+Doesn't return anything
+### change_bal_all(*string: guild_id, integer: cash=0, integer: bank=0*)
+Changes all users balance
+
+Doesn't return anything
+### set_bal_all(*string: guild_id, integer: cash=0, integer: bank=0*)
+Sets all users balance
+
+Doesn't return anything
